@@ -87,5 +87,5 @@ typedValueElement.addEventListener('input', (e) => {
 });
 
 courseName.addEventListener('input', (e) => {
-	result.value = 'Hello ' + courseName.value;
+	result.innerText = 'Hello ' + courseName.value;
 });
