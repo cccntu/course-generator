@@ -1,28 +1,22 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-Hant">
 
 <head>
 	<meta charset="UTF-8" />
-	<title>Typing</title>
+	<title>必修課產生器</title>
 	<link rel="stylesheet" href="./index.css" />
 </head>
 
 <body>
-	<h1>產生器</h1>
+	<h1>必修課產生器</h1>
 	<div>輸入以下欄位</div>
-	<div>
-		<input type="text" aria-label="current word" id="course-name" />
+	<div id="input-container">
+		<input type="text" aria-label="current word" id="course-name" value="大一國文" />
+		<input type="text" aria-label="current word" id="subject-name" value="文學" />
+		<input type="text" aria-label="current word" id="department-name" value="中文系" />
 	</div>
 	<p id="result"></p>
 
-	<p id="quote"></p>
-	<p id="message"></p>
-	<div>
-		<input type="text" aria-label="current word" id="typed-value" />
-	</div>
-	<div>
-		<button id="start" type="button">Start</button>
-	</div>
 	<script src="./index.js"></script>
 </body>
 
