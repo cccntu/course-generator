@@ -19,6 +19,8 @@ let startTime = Date.now();
 const quoteElement = document.getElementById('quote');
 const messageElement = document.getElementById('message')
 const typedValueElement = document.getElementById('typed-value');
+const courseName = document.getElementById('course-name');
+const result = document.getElementById('result');
 
 document.getElementById('start').addEventListener('click', function () {
 	// get a quote
@@ -31,7 +33,7 @@ document.getElementById('start').addEventListener('click', function () {
 
 	// UI updates
 	// Create an array of span elements so we can set a class
-	const spanWords = words.map(function(word) { return `<span>${word} </span>`});
+	const spanWords = words.map(function (word) { return `<span>${word} </span>` });
 	// Convert into string and set as innerHTML on quote display
 	quoteElement.innerHTML = spanWords.join('');
 	// Highlight the first word
@@ -82,4 +84,8 @@ typedValueElement.addEventListener('input', (e) => {
 		// error state
 		typedValueElement.className = 'error';
 	}
+});
+
+courseName.addEventListener('input', (e) => {
+	result.value = 'Hello ' + courseName.value;
 });
